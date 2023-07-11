@@ -2743,7 +2743,6 @@ img {
 
 .question-pop-up,
 .pop-up {
-    display: none;
     position: fixed;
     top: 50%;
     left: 50%;
@@ -2762,7 +2761,6 @@ img {
 
 .question-pop-up-active,
 .pop-up-active {
-    display: block;
     transform: translate(-50%, -50%) scale(1);
 }
 
