@@ -1,0 +1,23 @@
+ <div class="question-pop-up-overlay"></div>
+        <div class="question-pop-up">
+           <button class="q-pop-up-btn" type="button" onclick="close_faq_pop_up()">
+             <img class="q-pop-up-img" src="../images/closebtn.svg" width="18" height="18" alt="кнопка закрытия">
+           </button>
+           <div class="q-pop-up-main-wrapper">
+             <div class="q-pop-up-social-wrapper">
+               <p class="q-pop-up-social-desc" title="Авторизация">Авторизация:</p>
+               <a class="q-pop-up-social-link" href="#">Войти через Google</a>
+               <a class="q-pop-up-social-link" href="#">Войти через Facebook</a>
+             </div>
+             <div class="q-pop-up-form-wrapper">
+               <strong class="q-pop-up-form-title">Задать вопрос</strong>
+               <form class="q-pop-up-form" action="https://echo.htmlacademy.ru/courses" method="POST" autocomplete="off">
+                 <input class="q-pop-up-input" id="userName"  type="text" name="user_name" placeholder="Ваше имя" aria-label="Ваше имя" minlength="2" required>
+                 <textarea class="q-pop-up-input q-pop-up-input-feedback" id="userFeedback" name="user_feedback" placeholder="Опишите Ваш вопрос." aria-label="Опишите Ваш вопрос" minlength="3" required></textarea>
+                 <button class="q-pop-up-input-btn" type="submit" onclick="check_feedback_without_email()">
+                   Отправить 
+                 </button>
+               </form>
+             </div>
+           </div>
+        </div>
