@@ -2743,6 +2743,7 @@ img {
 
 .question-pop-up,
 .pop-up {
+    display: none;
     position: fixed;
     top: 50%;
     left: 50%;
@@ -2755,13 +2756,14 @@ img {
     background-image: url("../images/doghangphone.png"), url("../images/hangpets.svg");
     background-repeat: no-repeat;
     background-position: calc(25px) calc(330px), center;
+    transition: transform 0.3s ease;
 }
 
 
 .question-pop-up-active,
 .pop-up-active {
+    display: block;
     transform: translate(-50%, -50%) scale(1);
-    transition: transform 0.3s ease;
 }
 
 .q-pop-up-btn,
