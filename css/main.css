@@ -300,14 +300,7 @@ img {
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
-    background-color: #fff;
-}
-
-.header-overlay {
-    position: absolute;
-    left: -200px;
-    width: 130%;
-    height: 100%;
+    padding-bottom: 4px;
     background-color: #fff;
 }
 
@@ -329,11 +322,13 @@ img {
 }
 
 .site-nav {
+    display: inline-flex;
     margin-left: 301px;
     margin-right: 195px;
 }
 
 .nav-list {
+    display: inline-flex;
     position: relative;
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
@@ -344,7 +339,7 @@ img {
 
 .nav-list::before {
     position: absolute;
-    top: 4px;
+    top: 23px;
     left: calc(-15px - 12px);
     display: inline-block;
     width: 15px;
@@ -353,6 +348,11 @@ img {
     background-position: center;
     background-size: 15px 15px;
     content: "";
+}
+
+.nav-item {
+    display: inline-block;
+    padding: 20px 0;
 }
 
 .nav-link {
