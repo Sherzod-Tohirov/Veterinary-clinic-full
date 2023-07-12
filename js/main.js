@@ -111,7 +111,15 @@ function open_faq_pop_up() {
   pop_up_overlay.addEventListener('click', () => {
     pop_up.classList.remove('question-pop-up-active');
     pop_up_overlay.classList.remove('question-pop-up-overlay-active');
-  });
+    let allelements = document.querySelectorAll("*");
+    for(element of allelements) {
+        if(element.classList.contains('invalid')) {
+            console.log('Hi');
+           element.style.borderColor = 'transparent';
+           element.classList.remove('invalid');
+        }
+    }
+    });
 
 }
 
@@ -120,6 +128,13 @@ function close_faq_pop_up() {
   let pop_up_overlay = document.getElementsByClassName('question-pop-up-overlay')[0];
   pop_up.classList.remove('question-pop-up-active');
   pop_up_overlay.classList.remove('question-pop-up-overlay-active');
+  let allelements = document.querySelectorAll("*");
+    for(element of allelements) {
+        if(element.classList.contains('invalid')) {
+           element.style.borderColor = 'transparent';
+           element.classList.remove('invalid');
+        }
+    }
 }
 
 
@@ -132,6 +147,13 @@ function open_pop_up() {
   pop_up_overlay_overall.addEventListener('click', () => {
     pop_up_overall.classList.remove('pop-up-active');
     pop_up_overlay_overall.classList.remove('pop-up-overlay-active');
+    let allelements = document.querySelectorAll("*");
+    for(element of allelements) {
+        if(element.classList.contains('invalid')) {
+           element.style.borderColor = 'transparent';
+           element.classList.remove('invalid');
+        }
+    }
   });
 }
 
@@ -140,4 +162,11 @@ function close_pop_up() {
   let pop_up_overlay_overall = document.getElementsByClassName('pop-up-overlay')[0];
   pop_up_overall.classList.remove('pop-up-active');
   pop_up_overlay_overall.classList.remove('pop-up-overlay-active');
+  let allelements = document.querySelectorAll("*");
+    for(element of allelements) {
+        if(element.classList.contains('invalid')) {
+           element.style.borderColor = 'transparent';
+           element.classList.remove('invalid');
+        }
+    }
 }
