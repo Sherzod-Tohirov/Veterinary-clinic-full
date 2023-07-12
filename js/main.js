@@ -1,3 +1,7 @@
+document.addEventListener('DOMContentLoaded', function() {
+  document.querySelector('body').classList.remove('preload');
+});
+
 function check() {
   let elinp = document.getElementById('form-inp');
   if (elinp.value.length == 0 | elinp.value.length < 5) {
